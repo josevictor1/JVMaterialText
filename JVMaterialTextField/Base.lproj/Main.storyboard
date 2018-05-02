@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JVMaterialTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V6z-YV-iiy" customClass="JVMaterialText" customModule="JVMaterialTextField" customModuleProvider="target">
+                                <rect key="frame" x="16" y="294" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9P-UZ-qjD">
+                                <rect key="frame" x="220" y="363" width="139" height="128"/>
+                                <color key="backgroundColor" red="0.34172341630000003" green="0.32272741640000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDn-tv-uZ3">
+                                <rect key="frame" x="164" y="574" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="animate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="58w-38-aRj"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z12-dF-ycA">
+                                <rect key="frame" x="16" y="363" width="142" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.10320863550000001" blue="0.13173624819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n9P-UZ-qjD" firstAttribute="leading" secondItem="z12-dF-ycA" secondAttribute="trailing" constant="62" id="0Pe-ay-6KG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z12-dF-ycA" secondAttribute="bottom" constant="176" id="0z7-r3-plc"/>
+                            <constraint firstItem="XDn-tv-uZ3" firstAttribute="centerX" secondItem="V6z-YV-iiy" secondAttribute="centerX" id="3Ht-iY-Ecs"/>
+                            <constraint firstItem="z12-dF-ycA" firstAttribute="leading" secondItem="V6z-YV-iiy" secondAttribute="leading" id="A0W-dK-Gsb"/>
+                            <constraint firstItem="V6z-YV-iiy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="274" id="EWX-Xq-mgU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V6z-YV-iiy" secondAttribute="trailing" constant="16" id="FR5-Iz-hiS"/>
+                            <constraint firstItem="n9P-UZ-qjD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="220" id="FRU-3V-Yuv"/>
+                            <constraint firstItem="z12-dF-ycA" firstAttribute="bottom" secondItem="n9P-UZ-qjD" secondAttribute="bottom" id="Naa-SR-5So"/>
+                            <constraint firstItem="V6z-YV-iiy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gzO-f8-urc"/>
+                            <constraint firstItem="z12-dF-ycA" firstAttribute="top" secondItem="n9P-UZ-qjD" secondAttribute="top" id="hpN-sK-SXD"/>
+                            <constraint firstItem="z12-dF-ycA" firstAttribute="top" secondItem="V6z-YV-iiy" secondAttribute="bottom" constant="39" id="lqW-pD-euk"/>
+                            <constraint firstItem="n9P-UZ-qjD" firstAttribute="trailing" secondItem="V6z-YV-iiy" secondAttribute="trailing" id="mFv-80-3Ba"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XDn-tv-uZ3" secondAttribute="bottom" constant="63" id="xoa-vY-wAu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstView" destination="z12-dF-ycA" id="QoI-x0-ISn"/>
+                        <outlet property="secondView" destination="n9P-UZ-qjD" id="Od3-KQ-r1c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
